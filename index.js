@@ -1,4 +1,4 @@
-const marvel = [
+const people = [
 {name: 'Ironman'},
 {name: 'Spiderman'},
 {name: 'Hulk'},
@@ -92,8 +92,8 @@ searchInput.addEventListener('input', (event) => {
     if(value && value.trim().length > 0)
         {
             value = value.trim().toLowerCase();
-            setList(marvel.filter(marvel => {
-                return marvel.name.includes(value);
+            setList(people.filter(people => {
+                return people.name.includes(value);
             }).sort(personA, personB) => {
                 return getRelevancy(personB.name, value) - getRelevancy(personA.name, value);
             });
