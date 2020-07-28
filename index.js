@@ -34,7 +34,7 @@ const marvel = [
 {name: 'Jubilee'},
 {name: 'Colossus'},
 {name: 'X-23'},
-{name: 'Ultron'},
+{name: 'Ultron'}
 ];
 
 const list = document.getElementById('list');
