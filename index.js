@@ -75,14 +75,20 @@ function getRelevancy(value, searchTerm)
 {
     if(value === searchTerm)
     {
-            return 2;
+        return 2;
     }
-    else if (value.startsWith(term))
+    else if (value.startsWith(searchTerm))
     {
         return 1;
     }
-    else
+    else if (value.includes(searchTerm))
+    {
         return 0;
+    }
+    else
+    {
+        return -1;
+    }
 }
 
 const searchInput = document.getElementById('search');
