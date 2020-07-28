@@ -1,110 +1,90 @@
-const people = [
-{name: 'Ironman'},
-{name: 'Spiderman'},
-{name: 'Hulk'},
-{name: 'Wolverine'},
-{name: 'Deadpool'},
-{name: 'Juggernaut'},
-{name: 'Storm'},
-{name: 'Venom'},
-{name: 'Mr. Fantastic'},
-{name: 'Invisible Woman'},
-{name: 'The Thing'},
-{name: 'Human Torch'},
-{name: 'Nightcrawler'},
-{name: 'She-Hulk'},
-{name: 'Titania'},
-{name: 'Thundra'},
-{name: 'Red She-Hulk'},
-{name: 'Red Hulk'},
-{name: 'Domino'},
-{name: 'Shocker'},
-{name: 'Big Bertha'},
-{name: 'Black Cat'},
-{name: 'Silver Surfer'},
-{name: 'Taskmaster'},
-{name: 'Black Widow'},
-{name: 'Apocalypse'},
-{name: 'Thor'},
-{name: 'Cyclops'},
-{name: 'Squirrel Girl'},
-{name: 'MODOK'},
-{name: 'Red Skull'},
-{name: 'Captain America'},
-{name: 'Jubilee'},
-{name: 'Colossus'},
-{name: 'X-23'},
-{name: 'Ultron'}
+$(function())
+{
+  var alreadyFilled = false;
+var people = [
+{'Ironman'},
+{'Spiderman'},
+{'Hulk'},
+{'Wolverine'},
+{'Deadpool'},
+{'Juggernaut'},
+{'Storm'},
+{'Venom'},
+{'Mr. Fantastic'},
+{'Invisible Woman'},
+{'The Thing'},
+{'Human Torch'},
+{'Nightcrawler'},
+{'She-Hulk'},
+{'Titania'},
+{'Thundra'},
+{'Red She-Hulk'},
+{'Red Hulk'},
+{'Domino'},
+{'Shocker'},
+{'Big Bertha'},
+{'Black Cat'},
+{'Silver Surfer'},
+{'Taskmaster'},
+{'Black Widow'},
+{'Apocalypse'},
+{'Thor'},
+{'Cyclops'},
+{'Squirrel Girl'},
+{'MODOK'},
+{'Red Skull'},
+{'Captain America'},
+{'Jubilee'},
+{'Colossus'},
+{'X-23'},
+{'Ultron'}
 ];
 
-const list = document.getElementById('list');
-
-function setList(group)
-{
-    clearList();
-    for(const person of group)
-    {
-        const item = document.createElement('li');
-        item.classList.add('list-group-item');
-        const text = document.createTextNode(person.name);
-        item.appendChild(text);
-        list.appendChild(item);
-    }
-    if(group.Length === 0)
-    {
-        setNoResults();
-    }
-}
-
-function clearList()
-{
-    while(list.firstChild)
-        {
-            list.removeChild(list.firstChild);
+function initDialog() {
+        clearDialog();
+        for (var i = 0; i < states.length; i++) {
+            $('.dialog').append('<div>' + states[i] + '</div>');
         }
-}
-
-function setNoResults()
-{
-        const item = document.createElement('li');
-        item.classList.add('list-group-item');
-        const text = document.createTextNode("No results found.");
-        item.appendChild(text);
-        list.appendChild(item);
-}
-
-function getRelevancy(value, searchTerm)
-{
-    if(value === searchTerm)
-    {
-        return 2;
     }
-    else if (value.startsWith(searchTerm))
-    {
-        return 1;
+    function clearDialog() {
+        $('.dialog').empty();
     }
-    else if (value.includes(searchTerm))
-    {
-        return 0;
-    }
-    else
-    {
-        return -1;
-    }
-}
-
-const searchInput = document.getElementById('search');
-
-searchInput.addEventListener('input', (event) => {
-    let value = event.target.value;
-    if(value && value.trim().length > 0) {
-            value = value.trim().toLowerCase();
-            setList(people.filter(person => {
-                return person.name.includes(value);
-            }).sort((personA, personB) => {
-                return getRelevancy(personB.name, value) - getRelevancy(personA.name, value);
-            }));
-        }else{
-            clearList();
+    $('.autocomplete input').click(function() {
+        if (!alreadyFilled) {
+            $('.dialog').addClass('open');
         }
+
+    });
+    $('body').on('click', '.dialog > div', function() {
+        $('.autocomplete input').val($(this).text()).focus();
+        $('.autocomplete .close').addClass('visible');
+        alreadyFilled = true;
+    });
+    $('.autocomplete .close').click(function() {
+        alreadyFilled = false;
+        $('.dialog').addClass('open');
+        $('.autocomplete input').val('').focus();
+        $(this).removeClass('visible');
+    });
+
+    function match(str) {
+        str = str.toLowerCase();
+        clearDialog();
+        for (var i = 0; i < states.length; i++) {
+            if (states[i].toLowerCase().startsWith(str)) {
+                $('.dialog').append('<div>' + states[i] + '</div>');
+            }
+        }
+    }
+    $('.autocomplete input').on('input', function() {
+        $('.dialog').addClass('open');
+        alreadyFilled = false;
+        match($(this).val());
+    });
+    $('body').click(function(e) {
+        if (!$(e.target).is("input, .close")) {
+            $('.dialog').removeClass('open');
+        }
+    });
+    initDialog();
 });
