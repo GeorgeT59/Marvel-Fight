@@ -51,7 +51,9 @@ function setList(group)
         list.appendChild(item);
     }
     if(group.Length === 0)
+    {
         setNoResults();
+    }
 }
 
 function clearList()
