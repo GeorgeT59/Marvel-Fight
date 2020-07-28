@@ -95,14 +95,13 @@ const searchInput = document.getElementById('search');
 
 searchInput.addEventListener('input', (event) => {
     let value = event.target.value;
-    if(value && value.trim().length > 0)
-        {
+    if(value && value.trim().length > 0) {
             value = value.trim().toLowerCase();
-            setList(people.filter(people => {
-                return people.name.includes(value);
-            }).sort(personA, personB) => {
+            setList(people.filter(person => {
+                return person.name.includes(value);
+            }).sort((personA, personB) => {
                 return getRelevancy(personB.name, value) - getRelevancy(personA.name, value);
-            });
+            }));
         }else{
             clearList();
         }
