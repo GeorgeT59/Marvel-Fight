@@ -7,16 +7,73 @@ Marvel Fight Calculator
 This is under construction.
 <br>
 <br>
-<div class="autocomplete">
-    <input type="text" placeholder="Enter character.">
-    <div class="dialog">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var marvel = [
+"Ironman",
+"Spiderman",
+"Hulk",
+"Wolverine",
+"Deadpool",
+"Juggernaut",
+"Storm",
+"Venom",
+"Mr. Fantastic",
+"Invisible Woman",
+"The Thing",
+"Human Torch",
+"Nightcrawler",
+"She-Hulk",
+"Titania",
+"Thundra",
+"Red She-Hulk",
+"Red Hulk",
+"Domino",
+"Shocker",
+"Big Bertha",
+"Black Cat",
+"Silver Surfer",
+"Taskmaster",
+"Black Widow",
+"Apocalypse",
+"Thor",
+"Cyclops",
+"Squirrel Girl",
+"MODOK",
+"Red Skull",
+"Captain America",
+"Jubilee",
+"Colossus",
+"X-23",
+"Ultron"
+];
+
+    $( "#tags" ).autocomplete({
+      source: marvel
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
 </div>
-</div> 
-<!--
-<input type="text" placeholder="Enter character.">VS<input type="text" placeholder="Enter character.">
-<br>
-<br>
--->
+ 
+ 
+</body>
+</html>
 <button type="button" onclick="alert('Hello world!')">Result</button>
 </center>
 </body>
