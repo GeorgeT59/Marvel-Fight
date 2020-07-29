@@ -201,7 +201,26 @@ marvel.sort();
   <input id="tagsTwo" placeholder="Type a character.">
 
 
-<button type="button" onclick="alert('Hello world!')">Result</button>
+<button type="button" onclick="buttonClick()">Result</button>
+    
+<div id="Wolverine">
+Wolverine appears!
+</div>
+
+<div id="Quicksilver">
+Quicksilver appears!
+</div>
+    
+<script>
+function buttonClick() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </html>
 </center>
 </body>
