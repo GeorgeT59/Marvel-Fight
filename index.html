@@ -10,7 +10,15 @@ Marvel Fight Calculator
 Type your Marvel characters, and this will bring up official feats and official stats to see who would win.
 <br>
 <br>
-<!doctype html>
+Things to note:
+<br>
+<br>
+1.) If it's not in the search bar, then that character isn't added yet.
+<br>
+2.) Duplicates won't do anything.
+<br>
+3.) This is comic book universe NOT MCU.
+<br>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -204,25 +212,20 @@ marvel.sort();
 
 
 <button type="button" onclick="buttonClick()">Result</button>
+    
+<p id="message"></p>
+    
 <script>
   $( function buttonClick()
+<script>
+function buttonClick() 
 {
-var result = marvel.includes("")
-if(result)
-    console.log(isFound);
-else
-    console.log("Not found!");
+  if("button" == "Wolverine")
+    document.getElementById("message").innerHTML = "Wolverine Stats";
+  else
+    document.getElementById("message").innerHTML = "Something else!";
 }
 </script>
-<br>
-Things to note:
-<br>
-<br>
-1.) If it's not in the search bar, then that character isn't added yet.
-<br>
-2.) Duplicates won't do anything.
-<br>
-3.) This is comic book universe NOT MCU.
 </html>
 </center>
 </body>
