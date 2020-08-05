@@ -241,12 +241,14 @@ marvel.sort();
 <script>
 function buttonClick() 
 {
-  if("tags" === "Wolverine")
+  if(document.getElementById("tags").value == "Wolverine")
     document.getElementById("message").innerHTML = "Wolverine Stats";
   else
     document.getElementById("message").innerHTML = "Something else!";
 }
 </script>
+<br>
+<p id="message"></p>
 </html>
 </center>
 </body>
