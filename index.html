@@ -17,7 +17,7 @@ Things to note:
 <br>
 2.) Duplicates won't do anything.
 <br>
-3.) This is comic book universe NOT MCU.
+3.) This is comic book universe NOT MCU. Fixed?
 <br>
 <br>
 <html lang="en">
@@ -237,11 +237,9 @@ marvel.sort();
 <p id="message"></p>
     
 <script>
-  $( function buttonClick()
-<script>
 function buttonClick() 
 {
-  if(document.getElementById("tags").value == "Wolverine")
+  if(document.getElementById("tags").value == "Wolverine" || document.getElementById("tagsTwo").value == "Wolverine")
     document.getElementById("message").innerHTML = "Wolverine Stats";
   else
     document.getElementById("message").innerHTML = "Something else!";
