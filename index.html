@@ -19,6 +19,8 @@ Things to note:
 <br>
 3.) This is comic book universe NOT MCU.
 <br>
+4.) These stats are from the official handbook of the Marvel Universe.
+<br>
 <br>
 <html lang="en">
 <head>
@@ -39,7 +41,7 @@ Things to note:
 "Deadpool",
 "Juggernaut",
 "Storm",
-"Venom",
+//"Venom",
 "Mr. Fantastic",
 "Invisible Woman",
 "The Thing",
@@ -49,7 +51,7 @@ Things to note:
 "Titania",
 "Thundra",
 "Red She-Hulk",
-"Red Hulk",
+//"Red Hulk",
 "Domino",
 "Shocker",
 "Big Bertha",
@@ -261,26 +263,214 @@ function buttonClick()
 }
  if(tags === "Spiderman"){
     document.getElementById("message").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";}
- if (tagsTwo === "Spiderman"){
-     document.getElementById("messageTwo").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";}
- if(tags === "Hulk"){
-    document.getElementById("message").innerHTML = "Hulk Stats: Intelligence: 6 | Strength: 7 | Speed: 3 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 4 **Important to note high energy projection from emitting radiation during rage.";}
- if (tagsTwo === "Hulk"){
-    document.getElementById("messageTwo").innerHTML = "Hulk Stats: Intelligence: 6 | Strength: 7 | Speed: 3 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 4 **Important to note high energy projection from emitting radiation during rage.";}
-/*else if(document.getElementById("tags").value == "")
+ if (tagsTwo === "Spiderman")
+ {
+     document.getElementById("messageTwo").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Hulk")
+ {
+    document.getElementById("message").innerHTML = "Hulk Stats: Intelligence: 6 | Strength: 7 | Speed: 3 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 4 **Important to note high energy projection from emitting radiation during rage.";
+ }
+ if (tagsTwo === "Hulk")
+ {
+    document.getElementById("messageTwo").innerHTML = "Hulk Stats: Intelligence: 6 | Strength: 7 | Speed: 3 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 4 **Important to note high energy projection from emitting radiation during rage.";
+ }
+ if(tags === "Captain America")
+ {
+    document.getElementById("message").innerHTML = "Captain America Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Captain America")
+ {
+    document.getElementById("messageTwo").innerHTML = "Captain America Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if(tags === "Deadpool")
+ {
+    document.getElementById("message").innerHTML = "Deadpool Stats: Intelligence: 2 | Strength: 4 | Speed: 2 **With Teleporter makes it a 7** | Durability: 4 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Deadpool")
+ {
+    document.getElementById("message").innerHTML = "Deadpool Stats: Intelligence: 2 | Strength: 4 | Speed: 2 **With Teleporter makes it a 7** | Durability: 4 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if(tags === "Juggernaut")
+ {
+    document.getElementById("message").innerHTML = "Juggernaut Stats: Intelligence: 2 | Strength: 7 | Speed: 2 | Durability: 7 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Juggernaut")
+ {
+    document.getElementById("message").innerHTML = "Juggernaut Stats: Intelligence: 2 | Strength: 7 | Speed: 2 | Durability: 7 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Storm")
+ {
+    document.getElementById("message").innerHTML = "Storm Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Storm")
+ {
+    document.getElementById("message").innerHTML = "Storm Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if(tags === "Mr. Fantastic")
+ {
+    document.getElementById("message").innerHTML = "Mr. Fantastic Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Mr. Fantastic")
+ {
+    document.getElementById("message").innerHTML = "Mr. Fantastic Stats: Intelligence: 6 | Strength: 2 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "Invisible Woman")
+ {
+    document.getElementById("message").innerHTML = "Invisible Woman Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 5 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Invisible Woman")
+ {
+    document.getElementById("message").innerHTML = "Invisible Woman Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 5 | Fighting Skills: 3";
+ }
+ if(tags === "The Thing")
+ {
+    document.getElementById("message").innerHTML = "The Thing Stats: Intelligence: 3 | Strength: 6 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "The Thing")
+ {
+    document.getElementById("message").innerHTML = "The Thing Stats: Intelligence: 3 | Strength: 6 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if(tags === "Human Torch")
+ {
+    document.getElementById("message").innerHTML = "Human Torch Stats: Intelligence: 2 | Strength: 2 | Speed: 5 | Durability: 2 **6 heighted durability towards heat**| Energy Projection: 5 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Human Torch")
+ {
+    document.getElementById("message").innerHTML = "Human Torch Stats: Intelligence: 2 | Strength: 2 | Speed: 5 | Durability: 2 **6 heighted durability towards heat**| Energy Projection: 5 | Fighting Skills: 3";
+ }
+ if(tags === "Nightcrawler")
+ {
+    document.getElementById("message").innerHTML = "Nightcrawler Stats: Intelligence: 3 | Strength: 2 | Speed: 3 **Teleporter makes it a 7** | Durability: 2 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Nightcrawler")
+ {
+    document.getElementById("message").innerHTML = "Nightcrawler Stats: Intelligence: 3 | Strength: 2 | Speed: 3 **Teleporter makes it a 7** | Durability: 2 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "She-Hulk")
+ {
+    document.getElementById("message").innerHTML = "She-Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "She-Hulk")
+ {
+    document.getElementById("message").innerHTML = "She-Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Titania")
+ {
+    document.getElementById("message").innerHTML = "Titania Stats: Intelligence: 2 | Strength: 6 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Titania")
+ {
+    document.getElementById("message").innerHTML = "Titania Stats: Intelligence: 2 | Strength: 6 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Thundra")
+ {
+    document.getElementById("message").innerHTML = "Titania Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Thundra")
+ {
+    document.getElementById("message").innerHTML = "Titania Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Red She-Hulk")
+ {
+    document.getElementById("message").innerHTML = "Red She-Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 3 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Red She-Hulk")
+ {
+    document.getElementById("message").innerHTML = "Red She-Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 3 | Fighting Skills: 3";
+ }
+ if(tags === "Domino")
+ {
+    document.getElementById("message").innerHTML = "Domino Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Domino")
+ {
+    document.getElementById("message").innerHTML = "Domino Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 6";
+ }
+ if(tags === "Shocker")
+ {
+    document.getElementById("message").innerHTML = "Shocker Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 5 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Shocker")
+ {
+    document.getElementById("message").innerHTML = "Shocker Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 5 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+ if(tags === "Big Bertha")
+ {
+    document.getElementById("message").innerHTML = "Big Bertha Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Big Bertha")
+ {
+    document.getElementById("message").innerHTML = "Big Bertha Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "Black Cat")
+ {
+    document.getElementById("message").innerHTML = "Black Cat Stats: Intelligence: 2 | Strength: 4 | Speed: 3 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Black Cat")
+ {
+    document.getElementById("message").innerHTML = "Black Cat Stats: Intelligence: 2 | Strength: 4 | Speed: 3 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 3";
+ }
+ if(tags === "Silver Surfer")
+ {
+    document.getElementById("message").innerHTML = "Silver Surfer Stats: Intelligence: 3 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 7 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Silver Surfer")
+ {
+    document.getElementById("message").innerHTML = "Silver Surfer Stats: Intelligence: 3 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 7 | Fighting Skills: 2";
+ }
+ if(tags === "Taskmaster")
+ {
+    document.getElementById("message").innerHTML = "Taskmaster Stats: Intelligence: 4 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 7";
+ }
+ if (tagsTwo === "Taskmaster")
+ {
+    document.getElementById("message").innerHTML = "Taskmaster Stats: Intelligence: 4 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 7";
+ }
+ if(tags === "Black Widow")
+ {
+    document.getElementById("message").innerHTML = "Black Widow Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 3 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Black Widow")
+ {
+    document.getElementById("message").innerHTML = "Black Widow Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 3 | Fighting Skills: 6";
+ }
+ if(tags === "Apocolypse")
+ {
+    document.getElementById("message").innerHTML = "Apocolypse Stats: Intelligence: 6 | Strength: 7 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Apocolypse")
+ {
+    document.getElementById("message").innerHTML = "Apocolypse Stats: Intelligence: 6 | Strength: 7 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 3";
+ }
+ if(tags === "Thor")
+ {
+    document.getElementById("message").innerHTML = "Thor Stats: Intelligence: 2 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Thor")
+ {
+    document.getElementById("message").innerHTML = "Thor Stats: Intelligence: 2 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+    
+    
+//Venom missing - stats aren't available.
+//Red Hulk missing
+    
+//If blank or the same:
+    if(tags === "")
 {
-    docuemnt.getElementById("").innerHTML = "";
+    docuemnt.getElementById("").innerHTML = "Enter a character.";
 }
-else if(document.getElementById("tagsTwo").value == "")
+if(tagsTwo === "")
 {
-    document.getElementById("").innerHTML == "";
+    document.getElementById("").innerHTML == "Enter a character.";
 }
-  else
+if (tags === tagsTwo)
   {
-    document.getElementById("message").innerHTML = "Something else!";
-    document.getElementById("messageTwo").innerHTML = "Something else!";
+    document.getElementById("message").innerHTML = "The same!";
+    document.getElementById("messageTwo").innerHTML = "The same!";
   }
-*/
+
 }
 </script>
 <br>
