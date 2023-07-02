@@ -144,7 +144,7 @@ Things to note:
 "Vision",
 "Nebula",
 "Winter Soldier",
-"Ebony Maw",
+//"Ebony Maw",
 "Gambit",
 "Iceman",
 "Marrow",
@@ -164,18 +164,18 @@ Things to note:
 "Angel",
 "Black Bolt",
 "Bishop",
-"Corvus Glaive",
+//"Corvus Glaive",
 "Deathlok",
-"Electro",
-"Destroyer",
+//"Electro",
+//"Destroyer",
 "Enachantress",
-"Fandral",
+//"Fandral",
 "Fantomex",
-"Giant-Man",
-"Goliath",
+"Giant-Man (Henry Pym)",
+//"Goliath",
 "Kate Bishop",
 "Hellcat",
-"Hogun",
+//"Hogun",
 "Hydro-Man",
 "Kitty Pryde",
 "Kraven",
@@ -187,7 +187,7 @@ Things to note:
 "Nova",
 "Sandman",
 "Silk",
-"Spider-Gwen",
+//"Spider-Gwen",
 "Spiderman 2099",
 "Viper",
 "Wong",
@@ -196,16 +196,16 @@ Things to note:
 "Living Laser",
 "Valkyrie",
 "Ultron",
-"World War Hulk",
-"Jean",
+//"World War Hulk",
+"Jean Grey",
 "The Ancient One",
 "Dormammu",
-"Carnage",
+//"Carnage",
 "Puck",
 "Nico Minoru",
 "Karolina Dean",
 "Amadeus Cho",
-"Ultimate Spiderman",
+//"Ultimate Spiderman",
 "Mockingbird",
 "Hercules",
 "Molly Hayes",
@@ -213,7 +213,7 @@ Things to note:
 "Lady Deathstrike",
 "Hulkling",
 "Galactus",
-"Master Mold",
+//"Master Mold",
 "Banshee",
 "Dust"
 ];
@@ -1005,11 +1005,495 @@ if(tags === "Nebula")
  {
     document.getElementById("messageTwo").innerHTML = "Nebula Stats: Intelligence: 4 | Strength: 5 | Speed: 2 | Durability: 3 | Energy Projection: 6 | Fighting Skills: 4";
  }
-    
-    
-//Venom missing - stats aren't available.
-//Red Hulk missing
-    
+if(tags === "Winter Soldier")
+ {
+    document.getElementById("message").innerHTML = "Winter Soldier Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Winter Soldier")
+ {
+    document.getElementById("messageTwo").innerHTML = "Winter Soldier Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Gambit")
+ {
+    document.getElementById("message").innerHTML = "Gambit Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 2 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Gambit")
+ {
+    document.getElementById("messageTwo").innerHTML = "Gambit Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 2 | Fighting Skills: 4";
+ }
+if(tags === "Iceman")
+ {
+    document.getElementById("message").innerHTML = "Iceman Stats: Intelligence: 2 | Strength: 3 | Speed: 3 | Durability: 4 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Iceman")
+ {
+    document.getElementById("messageTwo").innerHTML = "Iceman Stats: Intelligence: 2 | Strength: 3 | Speed: 3 | Durability: 4 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+if(tags === "Marrow")
+ {
+    document.getElementById("message").innerHTML = "Marrow Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Marrow")
+ {
+    document.getElementById("messageTwo").innerHTML = "Marrow Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Rogue")
+ {
+    document.getElementById("message").innerHTML = "Rogue Stats: Intelligence: 3 | Strength: 5 | Speed: 5 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3 **Powers are flux depending on who she absorbs.**";
+ }
+ if (tagsTwo === "Rogue")
+ {
+    document.getElementById("messageTwo").innerHTML = "Rogue Stats: Intelligence: 3 | Strength: 5 | Speed: 5 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3 **Powers are flux depending on who she absorbs.**";
+ }
+if(tags === "Sabretooth")
+ {
+    document.getElementById("message").innerHTML = "Sabretooth Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Sabretooth")
+ {
+    document.getElementById("messageTwo").innerHTML = "Sabretooth Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Silver Samurai")
+ {
+    document.getElementById("message").innerHTML = "Silver Samurai Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 2 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Silver Samurai")
+ {
+    document.getElementById("messageTwo").innerHTML = "Silver Samurai Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 2 | Fighting Skills: 5";
+ }
+if(tags === "Shuma-Gorath")
+ {
+    document.getElementById("message").innerHTML = "Shuma-Gorath Stats: Intelligence: 3 | Strength: 7 | Speed: 2 **7 with teleporter| Durability: 7 | Energy Projection: 6 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Silver Samurai")
+ {
+    document.getElementById("messageTwo").innerHTML = "Shuma-Gorath Stats: Intelligence: 3 | Strength: 7 | Speed: 2 **7 with teleporter| Durability: 7 | Energy Projection: 6 | Fighting Skills: 2";
+ }
+if(tags === "Spiral")
+ {
+    document.getElementById("message").innerHTML = "Spiral Stats: Intelligence: 2 | Strength: 2 | Speed: 2 **7 with teleporter| Durability: 3 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Spiral")
+ {
+    document.getElementById("messageTwo").innerHTML = "Spiral Stats: Intelligence: 2 | Strength: 2 | Speed: 2 **7 with teleporter| Durability: 3 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Odin")
+ {
+    document.getElementById("message").innerHTML = "Odin Stats: Intelligence: 7 | Strength: 6 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Odin")
+ {
+    document.getElementById("messageTwo").innerHTML = "Odin Stats: Intelligence: 7 | Strength: 6 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 4";
+ }
+if(tags === "Doctor Strange")
+ {
+    document.getElementById("message").innerHTML = "Doctor Strange Stats: Intelligence: 4 | Strength: 2 | Speed: 2 **7 with teleporter** | Durability: 2 | Energy Projection: 6 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Doctor Strange")
+ {
+    document.getElementById("messageTwo").innerHTML = "Doctor Strange Stats: Intelligence: 4 | Strength: 2 | Speed: 2 **7 with teleporter** | Durability: 2 | Energy Projection: 6 | Fighting Skills: 6";
+ }
+if(tags === "Beta Ray Bill")
+ {
+    document.getElementById("message").innerHTML = "Beta Ray Bill Stats: Intelligence: 2 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Beta Ray Bill")
+ {
+    document.getElementById("messageTwo").innerHTML = "Beta Ray Bill Stats: Intelligence: 2 | Strength: 7 | Speed: 7 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 5";
+ }
+if(tags === "Hyperion")
+ {
+    document.getElementById("message").innerHTML = "Hyperion Stats: Intelligence: 3 | Strength: 6 | Speed: 5 | Durability: 7 | Energy Projection: 4 | Fighting Skills: 4 Universe 712";
+ }
+ if (tagsTwo === "Hyperion")
+ {
+    document.getElementById("messageTwo").innerHTML = "Hyperion Stats: Intelligence: 3 | Strength: 6 | Speed: 5 | Durability: 7 | Energy Projection: 4 | Fighting Skills: 4 Universe 712";
+ }
+if(tags === "Red Guardian")
+ {
+    document.getElementById("message").innerHTML = "Red Guardian Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Red Guardian")
+ {
+    document.getElementById("messageTwo").innerHTML = "Red Guardian Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "Absorbing Man")
+ {
+    document.getElementById("message").innerHTML = "Absorbing Man Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Absorbing Man")
+ {
+    document.getElementById("messageTwo").innerHTML = "Absorbing Man Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "Moonknight")
+ {
+    document.getElementById("message").innerHTML = "Moonknight Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Moonknight")
+ {
+    document.getElementById("messageTwo").innerHTML = "Moonknight Stats: Intelligence: 2 | Strength: 3 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Angela")
+ {
+    document.getElementById("message").innerHTML = "Angela Stats: Intelligence: 3 | Strength: 5 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Angela")
+ {
+    document.getElementById("messageTwo").innerHTML = "Angela Stats: Intelligence: 3 | Strength: 5 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Angel")
+ {
+    document.getElementById("message").innerHTML = "Angel Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Angel")
+ {
+    document.getElementById("messageTwo").innerHTML = "Angel Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Black Bolt")
+ {
+    document.getElementById("message").innerHTML = "Black Bolt Stats: Intelligence: 2 | Strength: 4 **5 amplified by energy powers**| Speed: 3 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Black Bolt")
+ {
+    document.getElementById("messageTwo").innerHTML = "Black Bolt Stats: Intelligence: 2 | Strength: 4 **5 amplified by energy powers**| Speed: 3 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+if(tags === "Bishop")
+ {
+    document.getElementById("message").innerHTML = "Bishop Stats: Intelligence: 2 | Strength: 2 **With bionic arm**| Speed: 3 **7 with bionic arm**| Durability: 3 | Energy Projection: 4 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Bishop")
+ {
+    document.getElementById("messageTwo").innerHTML = "Bishop Stats: Intelligence: 2 | Strength: 2 **With bionic arm**| Speed: 3 **7 with bionic arm**| Durability: 3 | Energy Projection: 4 | Fighting Skills: 4";
+ }
+if(tags === "Deathlok")
+ {
+    document.getElementById("message").innerHTML = "Deathlok Stats: Intelligence: 6| Strength: 4 | Speed: 3 | Durability: 5 | Energy Projection: 4 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Deathlok")
+ {
+    document.getElementById("messageTwo").innerHTML = "Deathlok Stats: Intelligence: 6| Strength: 4 | Speed: 3 | Durability: 5 | Energy Projection: 4 | Fighting Skills: 6";
+ }
+if(tags === "Enchantress")
+ {
+    document.getElementById("message").innerHTML = "Enchantress Stats: Intelligence: 4| Strength: 4 | Speed: 2 **7 with teleporter**| Durability: 6 | Energy Projection: 6 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Enchantress")
+ {
+    document.getElementById("messageTwo").innerHTML = "Enchantress Stats: Intelligence: 4| Strength: 4 | Speed: 2 **7 with teleporter**| Durability: 6 | Energy Projection: 6 | Fighting Skills: 2";
+ }
+if(tags === "Fantomex")
+ {
+    document.getElementById("message").innerHTML = "Fantomex Stats: Intelligence: 4| Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Fantomex")
+ {
+    document.getElementById("messageTwo").innerHTML = "Fantomex Stats: Intelligence: 4| Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Giant-Man (Henry Pym)")
+ {
+    document.getElementById("message").innerHTML = "Giant-Man Stats: Intelligence: 6| Strength: 7 | Speed: 3 | Durability: 3 | Energy Projection: 6 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Giant-Man (Henry Pym)")
+ {
+    document.getElementById("messageTwo").innerHTML = "Giant-Man Stats: Intelligence: 6| Strength: 7 | Speed: 3 | Durability: 3 | Energy Projection: 6 | Fighting Skills: 3";
+ }
+if(tags === "Kate Bishop")
+ {
+    document.getElementById("message").innerHTML = "Kate Bishop Stats: Intelligence: 3| Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Kate Bishop")
+ {
+    document.getElementById("messageTwo").innerHTML = "Kate Bishop Stats: Intelligence: 3| Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+if(tags === "Hellcat")
+ {
+    document.getElementById("message").innerHTML = "Hellcat Stats: Intelligence: 3| Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Hellcat")
+ {
+    document.getElementById("messageTwo").innerHTML = "Hellcat Stats: Intelligence: 3| Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "Hydro-Man")
+ {
+    document.getElementById("message").innerHTML = "Hydro-Man Stats: Intelligence: 2| Strength: 3 | Speed: 3 | Durability: 6 | Energy Projection: 4 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Hydro-Man")
+ {
+    document.getElementById("messageTwo").innerHTML = "Hydro-Man Stats: Intelligence: 2| Strength: 3 | Speed: 3 | Durability: 6 | Energy Projection: 4 | Fighting Skills: 3";
+ }
+if(tags === "Kitty Pryde")
+ {
+    document.getElementById("message").innerHTML = "Kitty Pryde Stats: Intelligence: 4| Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Kitty Pryde")
+ {
+    document.getElementById("messageTwo").innerHTML = "Kitty Pryde Stats: Intelligence: 4| Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "Kraven")
+ {
+    document.getElementById("message").innerHTML = "Kraven Stats: Intelligence: 3| Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Kraven")
+ {
+    document.getElementById("message").innerHTML = "Kraven Stats: Intelligence: 3| Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Lizard")
+ {
+    document.getElementById("message").innerHTML = "Lizard Stats: Intelligence: 5| Strength: 4 | Speed: 3 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Lizard")
+ {
+    document.getElementById("messageTwo").innerHTML = "Lizard Stats: Intelligence: 5| Strength: 4 | Speed: 3 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+if(tags === "Magik")
+ {
+    document.getElementById("message").innerHTML = "Magik Stats: Intelligence: 4| Strength: 2 | Speed: 2 **7 with teleporter**| Durability: 3 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Magik")
+ {
+    document.getElementById("messageTwo").innerHTML = "Magik Stats: Intelligence: 4| Strength: 2 | Speed: 2 **7 with teleporter**| Durability: 3 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Malekith")
+ {
+    document.getElementById("message").innerHTML = "Malekith Stats: Intelligence: 4| Strength: 4 **6 with teleortation enhanced**| Speed: 5 **7 with teleporter**| Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Malekith")
+ {
+    document.getElementById("messageTwo").innerHTML = "Malekith Stats: Intelligence: 4| Strength: 4 **6 with teleortation enhanced**| Speed: 5 **7 with teleporter**| Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Ms. Marvel")
+ {
+    document.getElementById("message").innerHTML = "Ms. Marvel Stats: Intelligence: 2| Strength: 2 **4 with full height**| Speed: 2 **3 with elongated legs**| Durability: 4 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Ms. Marvel")
+ {
+    document.getElementById("messageTwo").innerHTML = "Ms. Marvel Stats: Intelligence: 2| Strength: 2 **4 with full height**| Speed: 2 **3 with elongated legs**| Durability: 4 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+if(tags === "Nova")
+ {
+    document.getElementById("message").innerHTML = "Nova Stats: Intelligence: 2 **6 with Worldmind**| Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Nova")
+ {
+    document.getElementById("messageTwo").innerHTML = "Nova Stats: Intelligence: 2 **6 with Worldmind**| Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Sandman")
+ {
+    document.getElementById("message").innerHTML = "Sandman Stats: Intelligence: 2 | Strength: 6 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Sandman")
+ {
+    document.getElementById("messageTwo").innerHTML = "Sandman Stats: Intelligence: 2 | Strength: 6 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Silk")
+ {
+    document.getElementById("message").innerHTML = "Silk Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Silk")
+ {
+    document.getElementById("messageTwo").innerHTML = "Silk Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+if(tags === "Spiderman 2099")
+ {
+    document.getElementById("message").innerHTML = "Spiderman 2099 Stats: Intelligence: 4 | Strength: 4 | Speed: 4 | Durability: 3 | Energy Projection: 2 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Spiderman 2099")
+ {
+    document.getElementById("messageTwo").innerHTML = "Spiderman 2099 Stats: Intelligence: 4 | Strength: 4 | Speed: 4 | Durability: 3 | Energy Projection: 2 | Fighting Skills: 2";
+ }
+if(tags === "Viper")
+ {
+    document.getElementById("message").innerHTML = "Viper Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Viper")
+ {
+    document.getElementById("messageTwo").innerHTML = "Viper Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Wong")
+ {
+    document.getElementById("message").innerHTML = "Wong Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Wong")
+ {
+    document.getElementById("message").innerHTML = "Wong Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "YellowJacket")
+ {
+    document.getElementById("message").innerHTML = "YellowJacket Stats: Intelligence: 2 | Strength: 2 **5 in Giant Form**| Speed: 3 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "YellowJacket")
+ {
+    document.getElementById("messageTwo").innerHTML = "YellowJacket Stats: Intelligence: 2 | Strength: 2 **5 in Giant Form**| Speed: 3 | Durability: 2 | Energy Projection: 3 | Fighting Skills: 2";
+ }
+if(tags === "Whiplash")
+ {
+    document.getElementById("message").innerHTML = "Whiplash Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 5 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Whiplash")
+ {
+    document.getElementById("messageTwo").innerHTML = "Whiplash Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 5 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Living Laser")
+ {
+    document.getElementById("message").innerHTML = "Living Laser Stats: Intelligence: 4 | Strength: 4 | Speed: 6 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Living Laser")
+ {
+    document.getElementById("messageTwo").innerHTML = "Living Laser Stats: Intelligence: 4 | Strength: 4 | Speed: 6 | Durability: 7 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+if(tags === "Valkyrie")
+ {
+    document.getElementById("message").innerHTML = "Valkyrie Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Valkyrie")
+ {
+    document.getElementById("messageTwo").innerHTML = "Valkyrie Stats: Intelligence: 2 | Strength: 5 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+if(tags === "Ultron")
+ {
+    document.getElementById("message").innerHTML = "Ultron Stats: Intelligence: 4 | Strength: 6 | Speed: 3 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Ultron")
+ {
+    document.getElementById("messageTwo").innerHTML = "Ultron Stats: Intelligence: 4 | Strength: 6 | Speed: 3 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "Jean Grey)
+ {
+    document.getElementById("message").innerHTML = "Jean Grey Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Jean Grey")
+ {
+    document.getElementById("messageTwo").innerHTML = "Jean Grey Stats: Intelligence: 3 | Strength: 2 | Speed: 3 | Durability: 2 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+if(tags === "The Ancient One")
+ {
+    document.getElementById("message").innerHTML = "The Ancient One Stats: Intelligence: 4 | Strength: 3 | Speed: 7 | Durability: 4 | Energy Projection: 6 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "The Ancient One")
+ {
+    document.getElementById("messageTwo").innerHTML = "The Ancient One Stats: Intelligence: 4 | Strength: 3 | Speed: 7 | Durability: 4 | Energy Projection: 6 | Fighting Skills: 6";
+ }
+if(tags === "Dormammu")
+ {
+    document.getElementById("message").innerHTML = "Dormammu Stats: Intelligence: 6 | Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "The Ancient One")
+ {
+    document.getElementById("messageTwo").innerHTML = "Dormammu Stats: Intelligence: 6 | Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 4";
+ }
+if(tags === "Puck")
+ {
+    document.getElementById("message").innerHTML = "Puck Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Puck")
+ {
+    document.getElementById("messageTwo").innerHTML = "Puck Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Nico Minoru")
+ {
+    document.getElementById("message").innerHTML = "Nico Minoru Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 6 | Fighting Skills: 1";
+ }
+ if (tagsTwo === "Nico Minoru")
+ {
+    document.getElementById("messageTwo").innerHTML = "Nico Minoru Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 6 | Fighting Skills: 1";
+ }
+if(tags === "Karolina Dean")
+ {
+    document.getElementById("message").innerHTML = "Karolina Dean Stats: Intelligence: 2 | Strength: 3 | Speed: 3 | Durability: 5 | Energy Projection: 4 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Karolina Dean")
+ {
+    document.getElementById("messageTwo").innerHTML = "Karolina Dean Stats: Intelligence: 2 | Strength: 3 | Speed: 3 | Durability: 5 | Energy Projection: 4 | Fighting Skills: 2";
+ }
+if(tags === "Amadeus Cho")
+ {
+    document.getElementById("message").innerHTML = "Amadeus Cho Stats: Intelligence: 6 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Karolina Dean")
+ {
+    document.getElementById("messageTwo").innerHTML = "Amadeus Cho Stats: Intelligence: 6 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+if(tags === "Amadeus Cho")
+ {
+    document.getElementById("message").innerHTML = "Amadeus Cho Stats: Intelligence: 6 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Amadeus Cho")
+ {
+    document.getElementById("messageTwo").innerHTML = "Amadeus Cho Stats: Intelligence: 6 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+if(tags === "Mockingbird")
+ {
+    document.getElementById("message").innerHTML = "Mockingbird Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Mockingbird")
+ {
+    document.getElementById("messageTwo").innerHTML = "Mockingbird Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Hercules")
+ {
+    document.getElementById("message").innerHTML = "Hercules Stats: Intelligence: 2 | Strength: 7 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Hercules")
+ {
+    document.getElementById("messageTwo").innerHTML = "Hercules Stats: Intelligence: 2 | Strength: 7 | Speed: 2 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+if(tags === "Molly Hayes")
+ {
+    document.getElementById("message").innerHTML = "Molly Hayes Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Molly Hayes")
+ {
+    document.getElementById("message").innerHTML = "Molly Hayes Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 2";
+ }
+if(tags === "Professor X")
+ {
+    document.getElementById("message").innerHTML = "Professor X Stats: Intelligence: 5 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 5 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Professor X")
+ {
+    document.getElementById("messageTwo").innerHTML = "Professor X Stats: Intelligence: 5 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 5 | Fighting Skills: 3";
+ }
+if(tags === "Lady Deathstrike")
+ {
+    document.getElementById("message").innerHTML = "Lady Deathstrike X Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Lady Deathstrike")
+ {
+    document.getElementById("messageTwo").innerHTML = "Lady Deathstrike Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+if(tags === "Hulkling")
+ {
+    document.getElementById("message").innerHTML = "Hulkling Stats: Intelligence: 2 | Strength: 5 | Speed: 3 | Durability: 6 | Energy Projection: 4 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Hulkling")
+ {
+    document.getElementById("message").innerHTML = "Hulkling Stats: Intelligence: 2 | Strength: 5 | Speed: 3 | Durability: 6 | Energy Projection: 4 | Fighting Skills: 3";
+ }
+if(tags === "Galactus")
+ {
+    document.getElementById("message").innerHTML = "Galactus Stats: Intelligence: 7 | Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Galactus")
+ {
+    document.getElementById("messageTwo").innerHTML = "Galactus Stats: Intelligence: 7 | Strength: 7 | Speed: 7 | Durability: 7 | Energy Projection: 7 | Fighting Skills: 2";
+ }
+if(tags === "Banshee")
+ {
+    document.getElementById("message").innerHTML = "Banshee Stats: Intelligence: 3 | Strength: 2 | Speed: 4 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Banshee")
+ {
+    document.getElementById("messageTwo").innerHTML = "Banshee Stats: Intelligence: 3 | Strength: 2 | Speed: 4 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 4";
+ }
+if(tags === "Dust")
+ {
+    document.getElementById("message").innerHTML = "Dust  Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Dust")
+ {
+    document.getElementById("message").innerHTML = "Dust  Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+
 //If blank or the same:
     if(tags === "")
 {
@@ -1020,11 +1504,17 @@ if(tagsTwo === "")
     document.getElementById("").innerHTML == "Enter a character.";
 }
 if (tags === tagsTwo)
-  {
+{
     document.getElementById("message").innerHTML = "The same!";
     document.getElementById("messageTwo").innerHTML = "The same!";
-  }
-
+}
+if (marvel.Contains(tags))
+{
+    document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
+}
+if (marvel.Contains(tagsTwo))
+{
+    document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
 }
 </script>
 <br>
