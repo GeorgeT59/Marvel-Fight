@@ -237,7 +237,6 @@ marvel.sort();
 <p id="message"></p>
     
 <script>
-var ironman = document.getElementById("message").innerHTML = "Ironman Stats: Intelligence: 6 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4 ** This includes multiple enhancements made to the iron man armor, hence the high stats.";
 function buttonClick() 
 {
   if(document.getElementById("tags").value == "Wolverine")
@@ -250,11 +249,11 @@ else if (document.getElementById("tagsTwo").value == "Wolverine")
 }
 else if(document.getElementById("tags").value == "Ironman")
 {
-    ironman;    
+    document.getElementById("message").innerHTML = "Ironman Stats: Intelligence: 6 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4 ** This includes multiple enhancements made to the iron man armor, hence the high stats.";
 }
 else if (document.getElementById("tagsTwo").value == "Ironman")
 {
-        ironman;
+        document.getElementById("messageTwo").innerHTML = "Ironman Stats: Intelligence: 6 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4 ** This includes multiple enhancements made to the iron man armor, hence the high stats.";
 }
 else if(document.getElementById("tags").value == "Spiderman"){
     document.getElementById("message").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";}
