@@ -245,13 +245,13 @@ function buttonClick()
 {
   var tags = document.getElementById("tags").value;
   var tagsTwo = document.getElementById("tagsTwo").value;
-    
+   
   
-  if(tags === "Wolverine")
-  { 
+if(tags === "Wolverine")
+{ 
     document.getElementById("message").innerHTML = "Wolverine Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 7";
-  }
- if (tagsTwo === "Wolverine")
+}
+if (tagsTwo === "Wolverine")
 {
       document.getElementById("messageTwo").innerHTML = "Wolverine Stats: Intelligence: 2 | Strength: 4 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 7";
 }
@@ -263,8 +263,10 @@ function buttonClick()
 {
         document.getElementById("messageTwo").innerHTML = "Ironman Stats: Intelligence: 6 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4 ** This includes multiple enhancements made to the iron man armor, hence the high stats.";
 }
- if(tags === "Spiderman"){
-    document.getElementById("message").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";}
+ if(tags === "Spiderman")
+ {
+    document.getElementById("message").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
+ }
  if (tagsTwo === "Spiderman")
  {
      document.getElementById("messageTwo").innerHTML = "Spiderman Stats: Intelligence: 4 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
@@ -529,6 +531,7 @@ function buttonClick()
  {
     document.getElementById("message").innerHTML = "War Machine Stats: Intelligence: 3 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
  }
+
  if (tagsTwo === "Phoenix")
  {
     document.getElementById("messageTwo").innerHTML = "War Machine Stats: Intelligence: 3 | Strength: 6 | Speed: 5 | Durability: 6 | Energy Projection: 6 | Fighting Skills: 4";
@@ -1235,7 +1238,7 @@ if(tags === "Kraven")
  }
  if (tagsTwo === "Kraven")
  {
-    document.getElementById("message").innerHTML = "Kraven Stats: Intelligence: 3| Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+    document.getElementById("messageTwo").innerHTML = "Kraven Stats: Intelligence: 3| Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
  }
 if(tags === "Lizard")
  {
@@ -1495,7 +1498,7 @@ if(tags === "Dust")
  }
 
 //If blank or the same:
-    if(tags === "")
+if(tags === "")
 {
     docuemnt.getElementById("").innerHTML = "Enter a character.";
 }
@@ -1516,6 +1519,7 @@ if (marvel.Contains(tagsTwo))
 {
     document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
 }*/
+    }
 </script>
 <br>
 <p id="message"></p>
