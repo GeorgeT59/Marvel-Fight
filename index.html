@@ -1490,20 +1490,24 @@ if(tags === "Dust")
     document.getElementById("messageTwo").innerHTML = "Dust Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
  }
 
-//If blank or the same:
-if(tags.trim() === "")
+//If blank:
+if(tags.trim() === "" && tagsTwo.trim() != "")
 {
     document.getElementById("message").innerHTML = "Enter a character.";
 }
-if(tagsTwo.trim() === "")
+if(tagsTwo.trim() === "" && tags.trim() != "")
 {
     document.getElementById("messageTwo").innerHTML = "Enter a character.";
 }
+
+//If the same:
 if (tags === tagsTwo)
 {
     document.getElementById("message").innerHTML = "The same!";
     document.getElementById("messageTwo").innerHTML = "The same!";
 }
+
+//If not available:
 if (!marvel.Contains(tags))
 {
     document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
