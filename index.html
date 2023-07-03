@@ -1491,11 +1491,11 @@ if(tags === "Dust")
  }
 
 //If blank or the same:
-if(tags.trim === "")
+if(tags.trim() === "")
 {
     document.getElementById("message").innerHTML = "Enter a character.";
 }
-if(tagsTwo.trim === "")
+if(tagsTwo.trim() === "")
 {
     document.getElementById("messageTwo").innerHTML = "Enter a character.";
 }
@@ -1510,7 +1510,7 @@ if (!marvel.Contains(tags))
 }
 if (!marvel.Contains(tagsTwo))
 {
-    document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
+    document.getElementById("messageTwo").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
 }
 }
 </script>
