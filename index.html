@@ -779,7 +779,11 @@ if (tagsTwo === "Wolverine")
  {
     document.getElementById("messageTwo").innerHTML = "Scarlet Witch Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 2 | Energy Projection: 6 | Fighting Skills: 3";
  }
- if(tags === "Quicksilver")
+buttonClickTwo()
+}
+function buttonClickTwo()
+{
+    if(tags === "Quicksilver")
  {
     document.getElementById("message").innerHTML = "Quicksilver Stats: Intelligence: 3 | Strength: 4 | Speed: 5 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 4";
  }
@@ -1498,6 +1502,7 @@ if (tags === tagsTwo)
     document.getElementById("message").innerHTML = "The same!";
     document.getElementById("messageTwo").innerHTML = "The same!";
 }
+}
 /*if (marvel.Contains(tags))
 {
     document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
@@ -1506,7 +1511,6 @@ if (marvel.Contains(tagsTwo))
 {
     document.getElementById("message").innerHTML = "Character not added or spelling error. The drop down list hass the character or doesn't.";
 }*/
-}
 </script>
 <br>
 <p id="message"></p>
