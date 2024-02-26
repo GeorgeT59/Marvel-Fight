@@ -1,8 +1,37 @@
-<html>
+<html lang="en">
+   <center>
+   <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H30125KW24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H30125KW24');
+</script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Marvel Fight Calculator</title>
+      <!-- Include jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Include jQuery UI library -->
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+  
 <body>
-<center>
-<title>Marvel Fight Calculator</title>
-<img src="MarvelLogo.svg" height="200" width="400">
+
+   <img src="MarvelLogo.svg" height="200" width="400">
+   <br>
+   <label for="tags"></label>
+   <input id="tags" placeholder="Type a character.">
+ 
+ 
+   <label for="tagsTwo">VS</label>
+   <input id="tagsTwo" placeholder="Type a character."> 
+
+<br>
 <br>
 Marvel Fight Calculator 
 <br>
@@ -22,10 +51,10 @@ Things to note:
 4.) These stats are from the official handbook of the Marvel Universe.
 <br>
 5.) These are from 616 universe, unless otherwise stated.
+
 <br>
 <br>
-<head>
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H30125KW24"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -34,7 +63,7 @@ Things to note:
 
   gtag('config', 'G-H30125KW24');
 </script>
-</head>
+-->
 <script> 
   $( function() {
     var marvel = [
@@ -55,7 +84,7 @@ Things to note:
 "Titania",
 "Thundra",
 "Red She-Hulk",
-//"Red Hulk",
+"Red Hulk",
 "Domino",
 "Shocker",
 "Big Bertha",
@@ -93,13 +122,13 @@ Things to note:
 "Falcon",
 "Doorman",
 "Mr. Immortal",
-//"Punisher",
-//"Electrka",
-//"Luke Cage",
+"Punisher",
+"Elektra",
+"Luke Cage",
 "Iron Fist",
 "Daredevil",
 "Jessica Jones",
-//"Yondu",
+"Yondu",
 "Black Panther",
 "Beast",
 "Emma Frost",
@@ -121,7 +150,7 @@ Things to note:
 "Karnak",
 "Namor",
 //"Proxima Midnight",
-//"Loki",
+"Loki",
 "Kingpin",
 "Elsa Bloodstone",
 //"Nobu",
@@ -136,7 +165,7 @@ Things to note:
 "Rescue",
 "Cable",
 "Ironheart",
-//"Mystique",
+"Mystique",
 //"Shuri",
 "Hawkeye",
 "Crossbones",
@@ -168,8 +197,8 @@ Things to note:
 "Bishop",
 //"Corvus Glaive",
 "Deathlok",
-//"Electro",
-//"Destroyer",
+"Electro",
+"Destroyer",
 "Enachantress",
 //"Fandral",
 "Fantomex",
@@ -189,7 +218,7 @@ Things to note:
 "Nova",
 "Sandman",
 "Silk",
-//"Spider-Gwen",
+"Spider-Gwen",
 "Spiderman 2099",
 "Viper",
 "Wong",
@@ -228,15 +257,6 @@ marvel.sort();
   } );
     
   </script>
-
-
-  <label for="tags"></label>
-  <input id="tags" placeholder="Type a character.">
-
-
-  <label for="tagsTwo">VS</label>
-  <input id="tagsTwo" placeholder="Type a character.">
-
 
 <button type="button" onclick="buttonClick();buttonClickTwo()">Result</button>
     
@@ -740,6 +760,70 @@ if (tagsTwo === "Wolverine")
  if (tagsTwo === "Toad")
  {
     document.getElementById("messageTwo").innerHTML = "Toad Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "Elektra")
+ {
+    document.getElementById("message").innerHTML = "Elektra Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Elektra")
+ {
+    document.getElementById("messageTwo").innerHTML = "Elektra Stats: Intelligence: 3 | Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if(tags === "Luke Cage")
+ {
+    document.getElementById("message").innerHTML = "Luke Cage Stats: Intelligence: 3 | Strength: 4 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Luke Cage")
+ {
+    document.getElementById("messageTwo").innerHTML = "Luke Cage Stats: Intelligence: 3 | Strength: 4 | Speed: 2 | Durability: 5 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Yondu")
+ {
+    document.getElementById("message").innerHTML = "Yondu Stats: Intelligence: 3 | Strength: 4 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Yondu")
+ {
+    document.getElementById("messageTwo").innerHTML = "Yondu Stats: Intelligence: 3 | Strength: 4 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if(tags === "Loki")
+ {
+    document.getElementById("message").innerHTML = "Loki Stats: Intelligence: 5 | Strength: 4 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Loki")
+ {
+    document.getElementById("messageTwo").innerHTML = "Loki Stats: Intelligence: 5 | Strength: 4 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "Mystique")
+ {
+    document.getElementById("message").innerHTML = "Mystique Stats: Intelligence: 4 | Strength: 2 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if (tagsTwo === "Mystique")
+ {
+    document.getElementById("messageTwo").innerHTML = "Mystique Stats: Intelligence: 4 | Strength: 2 | Speed: 2 | Durability: 4 | Energy Projection: 1 | Fighting Skills: 5";
+ }
+ if(tags === "Electro")
+ {
+    document.getElementById("message").innerHTML = "Electro Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+ if (tagsTwo === "Electro")
+ {
+    document.getElementById("messageTwo").innerHTML = "Electro Stats: Intelligence: 2 | Strength: 2 | Speed: 2 | Durability: 3 | Energy Projection: 5 | Fighting Skills: 2";
+ }
+ if(tags === "Destroyer")
+ {
+    document.getElementById("message").innerHTML = "Destroyer Stats: Intelligence: 2 | Strength: 7 | Speed: 5 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Destroyer")
+ {
+    document.getElementById("messageTwo").innerHTML = "Destroyer Stats: Intelligence: 2 | Strength: 7 | Speed: 5 | Durability: 7 | Energy Projection: 6 | Fighting Skills: 4";
+ }
+ if(tags === "Spider-Gwen")
+ {
+    document.getElementById("message").innerHTML = "Spider-Gwen Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if (tagsTwo === "Spider-Gwen")
+ {
+    document.getElementById("messageTwo").innerHTML = "Spider-Gwen Stats: Intelligence: 3 | Strength: 4 | Speed: 3 | Durability: 3 | Energy Projection: 1 | Fighting Skills: 3";
  }
 }
 function buttonClickTwo()
@@ -1490,6 +1574,22 @@ if(tags === "Dust")
  if (tagsTwo === "Dust")
  {
     document.getElementById("messageTwo").innerHTML = "Dust Stats: Intelligence: 2 | Strength: 2 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 3";
+ }
+ if(tags === "Red Hulk")
+ {
+    document.getElementById("message").innerHTML = "Red Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if (tagsTwo === "Red Hulk")
+ {
+    document.getElementById("messageTwo").innerHTML = "Red Hulk Stats: Intelligence: 3 | Strength: 7 | Speed: 3 | Durability: 6 | Energy Projection: 1 | Fighting Skills: 4";
+ }
+ if(tags === "Punisher")
+ {
+    document.getElementById("message").innerHTML = "Punisher Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
+ }
+ if (tagsTwo === "Punisher")
+ {
+    document.getElementById("messageTwo").innerHTML = "Punisher Stats: Intelligence: 3 | Strength: 3 | Speed: 2 | Durability: 2 | Energy Projection: 1 | Fighting Skills: 6";
  }
 
 //If blank:
